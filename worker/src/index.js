@@ -1,5 +1,5 @@
 // Meta Conversions API relay for prettywoman-termine.velonify.de
-// Receives events from the LP (only after cookie consent), adds IP + user agent, forwards to Meta.
+// Receives events from the LP (with consent incl. fbp/fbc, without consent cookieless), adds IP + user agent, forwards to Meta.
 
 const EVENTS = new Set(['PageView', 'ViewContent', 'TerminGebucht']);
 const GRAPH = 'https://graph.facebook.com/v21.0';

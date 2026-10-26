@@ -11,15 +11,16 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('consent', 'default', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied', wait_for_update:500});
 window.pwCAPI = 'https://pw-capi.velonify.workers.dev/';
-// One event = one shared event_id for browser pixel + Conversions API (Meta dedupes on it). Only after consent.
-window.pwMeta = function(name, custom){
+// With consent: browser pixel + Conversions API with a shared event_id (Meta dedupes on it).
+// Without consent: Conversions API only, cookieless (no pixel, no _fbp; fbc only from fbclid in the URL).
+window.pwMeta = function(name, custom, id){
   var c = null; try { c = localStorage.getItem('pw_consent'); } catch(e) {}
-  if (c !== 'all') return;
-  var id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2);
-  var cookie = function(n){ var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : undefined; };
+  var ok = c === 'all';
+  id = id || ((window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2));
+  var cookie = function(n){ if (!ok) return undefined; var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : undefined; };
   var fbc = cookie('_fbc'), fbclid = new URLSearchParams(location.search).get('fbclid');
   if (!fbc && fbclid) fbc = 'fb.1.' + Date.now() + '.' + fbclid;
-  if (window.fbq) {
+  if (ok && window.fbq && name !== 'PageView') {
     if (name === 'TerminGebucht') fbq('trackCustom', name, custom || {}, {eventID: id});
     else fbq('track', name, custom || {}, {eventID: id});
   }
@@ -30,6 +31,8 @@ window.pwMeta = function(name, custom){
     })});
   } catch(e) {}
 };
+// One PageView id per page load: server PageView for everyone, pixel PageView after consent reuses it (deduped)
+window.pwPvId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2);
 window.pwLoadGTM = function(){
   if (window.pwGTM) return; window.pwGTM = true;
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PLBF7LSN');
@@ -42,7 +45,7 @@ window.pwLoadMeta = function(){
   if (window.fbq) return;
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '350174173102316');
-  window.pwMeta('PageView');
+  fbq('track', 'PageView', {}, {eventID: window.pwPvId});
 };
 (function(){
   var c = null; try { c = localStorage.getItem('pw_consent'); } catch(e) {}
@@ -52,6 +55,7 @@ window.pwLoadMeta = function(){
     window.pwLoadGTM();
     window.pwLoadClarity();
   }
+  window.pwMeta('PageView', null, window.pwPvId);
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -557,7 +561,7 @@ footer nav{display:flex;gap:20px}
 
 <div class="consent" id="consent" role="dialog" aria-labelledby="consent-h" aria-describedby="consent-p" hidden>
   <h2 id="consent-h">Ein Keks für dein Brautkleid-Glück? 🍪</h2>
-  <p id="consent-p">Mit ein paar Cookies sehen wir, wie du zu uns gefunden hast und ob dein Termin geklappt hat. So können wir unsere Seite für dich und alle zukünftigen Bräute noch schöner machen. Dafür nutzen wir Google und Meta. Alle Details findest du in der <a href="https://www.prettywoman-brautmoden.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+  <p id="consent-p">Mit ein paar Cookies sehen wir, wie du zu uns gefunden hast und ob dein Termin geklappt hat. So können wir unsere Seite für dich und alle zukünftigen Bräute noch schöner machen. Dafür nutzen wir Google und Meta. Ohne Cookies messen wir Seitenaufrufe und Terminbuchungen über unseren Server (Meta), damit wir sehen, welche Anzeigen funktionieren. Alle Details findest du in der <a href="https://www.prettywoman-brautmoden.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
   <div class="consent-actions">
     <button class="btn btn-line" type="button" data-consent="essential">Lieber nicht</button>
     <button class="btn btn-gold" type="button" data-consent="all">Gerne, Kekse her!</button>
