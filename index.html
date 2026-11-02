@@ -19,7 +19,7 @@ window.pwMeta = function(name, custom, id){
   id = id || ((window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2));
   var cookie = function(n){ if (!ok) return undefined; var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : undefined; };
   var fbc = cookie('_fbc'), fbclid = new URLSearchParams(location.search).get('fbclid');
-  if (!fbc && fbclid) fbc = 'fb.1.' + Date.now() + '.' + fbclid;
+  if (!fbc && fbclid) fbc = 'fb.1.' + (window.pwFbcTs = window.pwFbcTs || Date.now()) + '.' + fbclid;
   if (ok && window.fbq && name !== 'PageView') {
     if (name === 'TerminGebucht') fbq('trackCustom', name, custom || {}, {eventID: id});
     else fbq('track', name, custom || {}, {eventID: id});
@@ -37,9 +37,15 @@ window.pwLoadGTM = function(){
   if (window.pwGTM) return; window.pwGTM = true;
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PLBF7LSN');
 };
-window.pwLoadClarity = function(){
-  if (window.pwClarity) return; window.pwClarity = true;
-  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yyoyg80u1p");
+// Clarity runs for everyone: without consent in cookieless mode (consentv2 denied), cookies only after consent
+window.pwLoadClarity = function(granted){
+  var v = granted ? 'granted' : 'denied';
+  if (!window.pwClarity) {
+    window.pwClarity = true;
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};c[a]('consentv2',{ad_Storage:v,analytics_Storage:v});t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yyoyg80u1p");
+  } else {
+    clarity('consentv2', {ad_Storage:v, analytics_Storage:v});
+  }
 };
 window.pwLoadMeta = function(){
   if (window.fbq) return;
@@ -53,8 +59,8 @@ window.pwLoadMeta = function(){
     gtag('consent', 'update', {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'});
     window.pwLoadMeta();
     window.pwLoadGTM();
-    window.pwLoadClarity();
   }
+  window.pwLoadClarity(c === 'all');
   window.pwMeta('PageView', null, window.pwPvId);
 })();
 </script>
@@ -563,7 +569,7 @@ footer nav{display:flex;gap:20px}
 
 <div class="consent" id="consent" role="dialog" aria-labelledby="consent-h" aria-describedby="consent-p" hidden>
   <h2 id="consent-h">Ein Keks für dein Brautkleid-Glück? 🍪</h2>
-  <p id="consent-p">Mit ein paar Cookies sehen wir, wie du zu uns gefunden hast und ob dein Termin geklappt hat. So können wir unsere Seite für dich und alle zukünftigen Bräute noch schöner machen. Dafür nutzen wir Google und Meta. Ohne Cookies messen wir Seitenaufrufe und Terminbuchungen über unseren Server (Meta), damit wir sehen, welche Anzeigen funktionieren. Alle Details findest du in der <a href="https://www.prettywoman-brautmoden.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+  <p id="consent-p">Mit ein paar Cookies sehen wir, wie du zu uns gefunden hast und ob dein Termin geklappt hat. So können wir unsere Seite für dich und alle zukünftigen Bräute noch schöner machen. Dafür nutzen wir Google und Meta. Ohne Cookies messen wir Seitenaufrufe und Terminbuchungen über unseren Server (Meta) und mit Microsoft Clarity, wie unsere Seite genutzt wird. So sehen wir, welche Anzeigen funktionieren und wo die Seite noch hakt. Alle Details findest du in der <a href="https://www.prettywoman-brautmoden.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
   <div class="consent-actions">
     <button class="btn btn-line" type="button" data-consent="essential">Lieber nicht</button>
     <button class="btn btn-gold" type="button" data-consent="all">Gerne, Kekse her!</button>
@@ -608,7 +614,7 @@ footer nav{display:flex;gap:20px}
       gtag('consent', 'update', {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'});
       window.pwLoadMeta();
       window.pwLoadGTM();
-    window.pwLoadClarity();
+      window.pwLoadClarity(true);
     } else {
       gtag('consent', 'update', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied'});
     }
