@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Week Wedding Edition · Pretty Woman Mühlacker</title>
+<meta name="description" content="Black Week Wedding Edition vom 24. bis 30. November bei Pretty Woman in Mühlacker: 200 € Rabatt auf die neue Brautkleid-Kollektion, ausgewählte Brautkleider für 799 € zum Mitnehmen, Hochzeitsanzüge ab 150 €. Jetzt Deinen kostenlosen Termin sichern.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Black Week Wedding Edition · Pretty Woman Mühlacker">
+<meta property="og:description" content="24.–30. November: 200 € Rabatt auf die neue Kollektion, Brautkleider für 799 € zum Mitnehmen, Hochzeitsanzüge ab 150 €.">
+<meta property="og:image" content="https://prettywoman-termine.velonify.de/black-week/img/hero-a-linie-spitze.webp">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied', wait_for_update:500});
+// Landing page variant for GTM, Meta and Clarity
+dataLayer.push({lp_variant:'black_week'});
+window.pwVariant = 'black_week';
+window.pwCAPI = 'https://pw-capi.velonify.workers.dev/';
+// With consent: browser pixel + Conversions API with a shared event_id (Meta dedupes on it).
+// Without consent: Conversions API only, cookieless (no pixel, no _fbp; fbc only from fbclid in the URL).
+window.pwMeta = function(name, custom, id){
+  var c = null; try { c = localStorage.getItem('pw_consent'); } catch(e) {}
+  var ok = c === 'all';
+  id = id || ((window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2));
+  custom = custom || {}; custom.lp_variant = window.pwVariant;
+  var cookie = function(n){ if (!ok) return undefined; var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : undefined; };
+  var fbc = cookie('_fbc'), fbclid = new URLSearchParams(location.search).get('fbclid');
+  if (!fbc && fbclid) fbc = 'fb.1.' + (window.pwFbcTs = window.pwFbcTs || Date.now()) + '.' + fbclid;
+  if (ok && window.fbq && name !== 'PageView') {
+    if (name === 'TerminGebucht') fbq('trackCustom', name, custom, {eventID: id});
+    else fbq('track', name, custom, {eventID: id});
+  }
+  try {
+    fetch(window.pwCAPI, {method:'POST', keepalive:true, headers:{'Content-Type':'text/plain'}, body: JSON.stringify({
+      event_name: name, event_id: id, event_source_url: location.href.split('#')[0],
+      fbp: cookie('_fbp'), fbc: fbc, custom_data: custom
+    })}).catch(function(){});
+  } catch(e) {}
+};
+// One PageView id per page load: server PageView for everyone, pixel PageView after consent reuses it (deduped)
+window.pwPvId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2);
+window.pwLoadGTM = function(){
+  if (window.pwGTM) return; window.pwGTM = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PLBF7LSN');
+};
+// Clarity runs for everyone: without consent in cookieless mode (consentv2 denied), cookies only after consent
+window.pwLoadClarity = function(granted){
+  var v = granted ? 'granted' : 'denied';
+  if (!window.pwClarity) {
+    window.pwClarity = true;
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};c[a]('consentv2',{ad_Storage:v,analytics_Storage:v});t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yyoyg80u1p");
+    clarity('set', 'lp_variant', window.pwVariant);
+  } else {
+    clarity('consentv2', {ad_Storage:v, analytics_Storage:v});
+  }
+};
+window.pwLoadMeta = function(){
+  if (window.fbq) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '350174173102316');
+  fbq('track', 'PageView', {lp_variant: window.pwVariant}, {eventID: window.pwPvId});
+};
+(function(){
+  var c = null; try { c = localStorage.getItem('pw_consent'); } catch(e) {}
+  if (c === 'all') {
+    gtag('consent', 'update', {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'});
+    window.pwLoadMeta();
+    window.pwLoadGTM();
+  }
+  window.pwLoadClarity(c === 'all');
+  window.pwMeta('PageView', null, window.pwPvId);
+})();
+</script>
+<link rel="preload" href="fonts/playfair-display-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Playfair Display";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/playfair-display-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/playfair-display-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/playfair-display-latin-500-italic.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/inter-latin-700-normal.woff2) format("woff2")}
+:root{
+  /* Pretty Woman Brand Guide (colors + fonts); layout tokens unchanged */
+  --ink:#141414;
+  --ink-soft:#5c5344;
+  --ink-alt:#311c12;
+  --paper:#ffffff;
+  --veil:#f7f2ea;
+  --rose:#f7f2ea;
+  --rose-ink:#311c12;
+  --gold:#ab8148;
+  --gold-soft:#cfaf7c;
+  --gold-deep:#7c5a2c;
+  --line:rgba(20,20,20,.13);
+  --line-gold:rgba(171,129,72,.45);
+  --ok:#2f6b4f;
+  --radius:2px;
+  --wrap:min(1180px, 100% - 32px);
+  --display:"Playfair Display", Georgia, "Times New Roman", serif;
+  --body:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+::selection{background:var(--rose);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,4.2vw,3.4rem)}
+h3{font-size:1.45rem;line-height:1.2}
+p{margin:0}
+em{font-style:italic}
+.lead{font-size:clamp(1.1rem,1.5vw,1.25rem);color:var(--ink-soft);max-width:38ch}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:56px;padding:0 1.75rem;border-radius:var(--radius);font:500 1rem/1 var(--body);letter-spacing:.04em;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .25s cubic-bezier(.2,.8,.2,1),transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 6px 16px -8px rgba(31,26,23,.4)}
+.btn-gold:hover{background:#dba53f;transform:translateY(-1px);box-shadow:0 10px 22px -10px rgba(31,26,23,.45)}
+.btn-gold:active{transform:none}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Top bar */
+.top{position:relative;z-index:5;border-bottom:1px solid var(--line);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.logo img{height:64px;width:auto}
+.top-call{display:flex;align-items:center;gap:.5em;font-weight:500;text-decoration:none;font-size:.95rem}
+.top-call svg{width:18px;height:18px}
+.top-call span{white-space:nowrap}
+
+/* Hero */
+.hero{padding:clamp(28px,5vw,72px) 0 clamp(48px,6vw,96px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,80px);align-items:center}
+.rating{display:inline-flex;align-items:center;gap:.65em;font-size:.95rem;color:var(--ink-soft);text-decoration:none;margin-bottom:28px}
+.rating b{color:var(--ink);font-weight:600}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.stars svg{width:17px;height:17px}
+.g{width:18px;height:18px}
+.hero h1{font-size:clamp(2.4rem,4.4vw,4.1rem);margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--rose-ink)}
+.hero .lead{margin-bottom:34px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.cta-note{font-size:.9rem;color:var(--ink-soft)}
+.promises{display:flex;flex-wrap:wrap;gap:10px 28px;margin:40px 0 0;padding:24px 0 0;border-top:1px solid var(--line);list-style:none;font-size:.95rem}
+.promises li{display:flex;align-items:center;gap:.55em}
+.promises svg{width:18px;height:18px;color:var(--gold-deep);flex:none}
+
+.hero-art{margin:0;position:relative;aspect-ratio:4/5;max-height:640px;justify-self:end;width:100%}
+.hero-art .a{position:absolute;inset:0 22% 12% 0;object-fit:cover;width:78%;height:88%;border-radius:var(--radius)}
+.hero-art .b{position:absolute;right:0;bottom:0;width:46%;height:52%;object-fit:cover;border:8px solid var(--paper);border-radius:var(--radius);box-shadow:0 24px 50px -24px rgba(31,26,23,.45)}
+.hero-art figcaption{position:absolute;left:-14px;bottom:4%;background:var(--paper);padding:14px 18px;max-width:240px;font-size:.88rem;line-height:1.45;box-shadow:0 18px 40px -22px rgba(31,26,23,.5);border-radius:var(--radius)}
+.hero-art figcaption q{font-family:var(--display);font-style:italic;font-size:1.05rem;display:block;margin-bottom:6px;color:var(--ink)}
+.hero-art figcaption span{color:var(--ink-soft)}
+
+/* Ablauf */
+.flow{background:var(--rose);padding:clamp(64px,8vw,120px) 0}
+.flow-head{display:grid;grid-template-columns:1fr 1fr;gap:32px 64px;align-items:end;margin-bottom:clamp(40px,5vw,72px)}
+.flow-head p{color:var(--rose-ink);max-width:44ch}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:1px;background:rgba(90,58,55,.3)}
+.step{position:relative;padding-right:24px}
+.step .dot{width:56px;height:56px;border-radius:50%;background:var(--paper);display:grid;place-items:center;margin-bottom:22px;position:relative;color:var(--rose-ink);transition:background .4s,color .4s}
+.step .dot svg{width:24px;height:24px}
+.step h3{font-size:1.25rem;margin-bottom:8px}
+.step p{font-size:.97rem;color:var(--rose-ink)}
+.step.bell .dot{background:var(--gold);color:var(--ink)}
+.step.bell .dot svg{transform-origin:50% 8%}
+.flow.in .step.bell .dot svg{animation:ring 1.4s cubic-bezier(.36,.07,.19,.97) .9s 2}
+@keyframes ring{0%,100%{transform:rotate(0)}15%{transform:rotate(16deg)}30%{transform:rotate(-14deg)}45%{transform:rotate(10deg)}60%{transform:rotate(-6deg)}75%{transform:rotate(3deg)}}
+.faces{display:flex;align-items:center;gap:20px;margin-top:clamp(48px,6vw,80px);padding-top:32px;border-top:1px solid rgba(90,58,55,.25)}
+.faces img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:50% 20%;flex:none}
+.faces p{max-width:62ch;color:var(--rose-ink)}
+.faces b{color:var(--ink);font-weight:500}
+
+/* Termin */
+.book{padding:clamp(64px,8vw,120px) 0;background:var(--paper)}
+.book-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,72px);align-items:start}
+.book-side{position:sticky;top:24px}
+.book-side h2{margin-bottom:18px}
+.book-side>p{color:var(--ink-soft);margin-bottom:32px}
+.planner{border:1px solid var(--line);padding:24px;border-radius:var(--radius);background:var(--veil)}
+.planner label{display:block;font-weight:500;margin-bottom:10px}
+.planner select{width:100%;min-height:52px;padding:0 14px;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%231f1a17' stroke-width='1.5'%3E%3Cpath d='M2 5l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.track{position:relative;height:6px;background:var(--line);border-radius:3px;margin:28px 0 12px}
+.track i{position:absolute;top:0;bottom:0;border-radius:3px;transition:left .6s cubic-bezier(.2,.8,.2,1),width .6s cubic-bezier(.2,.8,.2,1)}
+.track .seg-search{background:var(--gold)}
+.track .seg-deliver{background:var(--rose-ink);opacity:.55}
+.track .seg-fit{background:var(--rose-ink)}
+.track .now,.track .wed{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid var(--paper);transition:left .6s cubic-bezier(.2,.8,.2,1)}
+.track .now{background:var(--ink)}
+.track .wed{background:var(--gold-deep)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;color:var(--ink-soft);margin-bottom:18px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.verdict{font-size:1rem;line-height:1.5;min-height:3em}
+.verdict b{font-weight:600}
+.verdict[data-tone="urgent"] b{color:var(--rose-ink)}
+.verdict[data-tone="good"] b{color:var(--ok)}
+.book-frame{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper);min-height:760px;position:relative}
+.book-frame iframe{display:block;width:100%;height:1040px;border:0}
+.frame-hint{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;align-items:center;padding:14px 18px;font-size:.9rem;color:var(--ink-soft);border-top:1px solid var(--line);background:var(--veil)}
+.frame-hint a{font-weight:500;color:var(--ink)}
+.book-tip{margin-top:14px;font-size:.92rem;color:var(--ink-soft)}
+.book-tip b{color:var(--ink);font-weight:500}
+
+/* Stimmen */
+.voices{background:var(--ink);color:var(--paper);padding:clamp(64px,8vw,120px) 0}
+.voices-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:32px;margin-bottom:clamp(40px,5vw,64px)}
+.score{display:flex;align-items:center;gap:22px}
+.score strong{font-family:var(--display);font-weight:400;font-size:clamp(4rem,8vw,6rem);line-height:.9}
+.score .stars{color:var(--gold)}
+.score .stars svg{width:20px;height:20px}
+.score small{display:block;color:#cfc6bf;font-size:.95rem;margin-top:6px}
+.quotes{columns:3 300px;column-gap:clamp(24px,3vw,48px)}
+.quote{break-inside:avoid;margin:0 0 clamp(28px,3vw,44px);padding-top:22px;border-top:1px solid rgba(255,255,255,.18)}
+.quote blockquote{margin:0 0 14px;font-family:var(--display);font-size:clamp(1.2rem,1.6vw,1.4rem);line-height:1.38}
+.quote figcaption{font-size:.9rem;color:#cfc6bf}
+.quote figcaption b{color:var(--paper);font-weight:500}
+.quote .tag{display:inline-block;margin-left:.5em;padding:2px 8px;border:1px solid rgba(207,149,41,.6);color:#e8c27c;font-size:.8rem;letter-spacing:.04em;border-radius:20px}
+.voices-foot{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:12px}
+.voices-foot a:not(.btn){color:#e8c27c}
+
+/* Preis */
+.price{padding:clamp(64px,8vw,120px) 0}
+.price-head{max-width:760px;margin-bottom:clamp(36px,5vw,64px)}
+.price-head h2{margin-bottom:18px}
+.price-head p{color:var(--ink-soft);max-width:60ch}
+.tiers{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--ink)}
+.tier{padding:32px clamp(16px,2.4vw,36px) 36px 0;border-right:1px solid var(--line)}
+.tier+.tier{padding-left:clamp(16px,2.4vw,36px)}
+.tier:last-child{border-right:0}
+.tier h3{margin-bottom:14px}
+.tier .amt{font-family:var(--display);font-size:clamp(2.1rem,3.4vw,2.9rem);line-height:1;margin-bottom:16px;font-variant-numeric:lining-nums}
+.tier .amt small{font-family:var(--body);font-size:1rem;color:var(--ink-soft);margin-right:.3em}
+.tier p{color:var(--ink-soft);font-size:.98rem}
+.tier.outlet{background:var(--veil);padding-left:clamp(16px,2.4vw,36px)}
+.tier.outlet .amt{color:var(--gold-deep)}
+.ph{background:#fff3cd;color:#6b4e00;padding:0 .25em;border-radius:2px;font-family:var(--body);letter-spacing:0}
+.amt .ph{font-size:.6em;vertical-align:middle}
+.budget-note{display:flex;gap:18px;align-items:center;margin-top:36px;padding:22px 24px;border:1px solid var(--line);border-radius:var(--radius)}
+.budget-note svg{width:28px;height:28px;color:var(--gold-deep);flex:none}
+
+/* Curvy */
+.curvy{background:var(--rose);padding:clamp(64px,8vw,120px) 0;overflow:hidden}
+.curvy .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,80px);align-items:center}
+.curvy-pics{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+.curvy-pics img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.curvy-pics img:first-child{grid-row:span 2;aspect-ratio:3/4.4}
+.curvy-pics img:not(:first-child){aspect-ratio:1}
+.sizes{display:flex;flex-wrap:wrap;gap:4px 14px;margin:22px 0 28px;padding-top:14px;border-top:1px solid rgba(90,58,55,.2);cursor:default;user-select:none}
+.sizes span{font-size:.9rem;color:var(--ink-soft);opacity:.6;font-variant-numeric:tabular-nums;transition:color .3s,opacity .3s}
+.sizes span.hot{color:var(--rose-ink);opacity:1;font-weight:500}
+.curvy h2{margin-bottom:18px}
+.curvy p{color:var(--rose-ink)}
+.curvy blockquote{margin:28px 0 30px;padding-left:20px;border-left:1px solid var(--rose-ink);font-family:var(--display);font-style:italic;font-size:1.2rem;line-height:1.45;color:var(--ink)}
+.curvy blockquote cite{display:block;margin-top:8px;font-family:var(--body);font-style:normal;font-size:.9rem;color:var(--rose-ink)}
+
+/* FAQ */
+.faq{padding:clamp(64px,8vw,120px) 0}
+.faq .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(32px,5vw,80px)}
+.faq h2{margin-bottom:16px}
+.faq-side p{color:var(--ink-soft)}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--display);font-size:clamp(1.2rem,1.7vw,1.4rem);line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:14px;height:14px;flex:none;background:linear-gradient(var(--ink),var(--ink)) center/100% 1.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1.5px 100% no-repeat;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details .ans{padding:0 0 24px;color:var(--ink-soft);max-width:62ch}
+details .ans p+p{margin-top:.8em}
+
+/* Abschluss */
+.close{background:var(--veil);padding:clamp(64px,8vw,112px) 0}
+.close .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:48px;align-items:center}
+.close h2{margin-bottom:20px}
+.close p{color:var(--ink-soft);margin-bottom:30px;max-width:48ch}
+.visit{font-size:1rem;line-height:1.7}
+.visit h3{font-size:1.3rem;margin-bottom:10px}
+.visit a{font-weight:500}
+footer{padding:28px 0 120px;font-size:.85rem;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+footer nav{display:flex;gap:20px}
+
+/* Consent */
+.consent{position:fixed;z-index:40;left:16px;right:16px;bottom:16px;max-width:520px;margin-inline:auto;background:var(--paper);color:var(--ink);padding:22px 22px 20px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 24px 60px -24px rgba(31,26,23,.45);font-size:.95rem;line-height:1.5}
+.consent[hidden]{display:none}
+.consent h2{font-size:1.35rem;margin-bottom:8px}
+.consent p{color:var(--ink-soft);margin-bottom:16px}
+.consent-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.consent-actions .btn{min-height:48px;padding:0 1rem;font-size:.95rem}
+.linkish{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;text-underline-offset:.2em;cursor:pointer}
+@media (max-width:420px){.consent-actions{grid-template-columns:1fr}}
+
+/* Mobile CTA */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(31,26,23,.35);transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.dock.show{transform:none}
+.dock .btn{width:100%}
+.dock small{display:block;text-align:center;font-size:.78rem;color:var(--ink-soft);margin-top:6px}
+
+/* Reveal */
+.rv{opacity:1;transform:none}
+.js .rv{opacity:.35;transform:translateY(16px);filter:blur(2px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1),filter .8s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none;filter:none}
+
+@media (max-width:960px){
+  .hero .wrap,.book-grid,.curvy .wrap,.faq .wrap,.close .wrap,.flow-head{grid-template-columns:1fr}
+  .hero-art{max-height:none;aspect-ratio:auto;height:auto;display:grid;grid-template-columns:1.4fr 1fr;gap:10px;justify-self:stretch}
+  .hero-art .a,.hero-art .b{position:static;width:100%;height:260px;border:0;box-shadow:none}
+  .hero-art figcaption{position:static;grid-column:1/-1;max-width:none;box-shadow:none;background:var(--veil)}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps::before{left:27px;right:auto;top:0;bottom:0;width:1px;height:auto}
+  .step{display:grid;grid-template-columns:56px 1fr;column-gap:20px;padding:0 0 28px}
+  .step .dot{grid-row:span 2;margin:0}
+  .book-side{position:static}
+  .book-grid{gap:0}
+  .book-side{display:contents}
+  .book-main{order:1}
+  .planner{order:2;margin-top:32px}
+  .tiers{grid-template-columns:1fr}
+  .tier,.tier+.tier,.tier.outlet{padding:26px 20px;border-right:0;border-bottom:1px solid var(--line)}
+  .tier:not(.outlet){padding-left:0;padding-right:0}
+  .curvy-pics{order:-1}
+  .dock{display:block}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .top .wrap{height:64px}
+  .logo img{height:40px}
+  .top-call span{display:none}
+  .top-call{width:44px;height:44px;justify-content:center;border:1px solid var(--line);border-radius:50%}
+  .hero{padding-top:24px}
+  .rating{margin-bottom:18px;font-size:.88rem}
+  .cta-row .btn{width:100%}
+  .cta-row .cta-note{width:100%;text-align:center}
+  .promises{gap:10px 18px;margin-top:28px}
+  .hero-art{display:none}
+  .hero{padding-bottom:8px}
+  .book{padding-top:32px}
+  .faces{align-items:flex-start}
+  .faces img{width:56px;height:56px}
+  .book-frame iframe{height:1180px}
+  .score strong{font-size:4rem}
+}
+
+
+/* ===== Black Week additions (same visual language as the main LP) ===== */
+.hero h1 .k1{display:block;font-size:clamp(3rem,6.4vw,5.6rem);line-height:.98}
+.hero h1 em{display:block;margin-top:.18em;font-size:.62em;font-style:italic}
+.dates{display:flex;align-items:center;gap:14px;font-size:1rem;letter-spacing:.04em;color:var(--ink-soft);margin:-8px 0 22px}
+.dates::before{content:"";width:36px;height:1px;background:var(--gold-deep);flex:none}
+.clock{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:.95rem;color:var(--ink-soft)}
+.clock i{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
+.clock b{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.clock[hidden]{display:none}
+.over-note{display:none;background:var(--rose);padding:14px 0;text-align:center;font-size:.98rem;color:var(--rose-ink)}
+.over-note a{color:var(--ink);font-weight:500}
+.is-over .over-note{display:block}
+
+/* Day overview */
+.days{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid var(--line)}
+.day{display:grid;grid-template-columns:92px 1fr;align-items:center;gap:12px;width:100%;padding:12px 0;border:0;border-bottom:1px solid var(--line);background:none;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.day:hover .d{color:var(--gold-deep)}
+.day .d{font-family:var(--display);font-size:1.15rem;line-height:1.15;transition:color .2s}
+.day .d small{display:block;font:400 .78rem/1.3 var(--body);color:var(--ink-soft);letter-spacing:.02em}
+.slots{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.95rem;font-variant-numeric:tabular-nums;color:var(--ink-soft)}
+.day.past{opacity:.4;cursor:default}
+.day.today .d{color:var(--gold-deep)}
+.book-side>.days-h{font-family:var(--display);font-size:1.3rem;margin-bottom:12px}
+
+/* Offers as price tiers */
+.tiers.three{grid-template-columns:repeat(3,1fr)}
+.tier.main{background:var(--veil);padding-left:clamp(16px,2.4vw,36px)}
+.tier.main .amt{color:var(--gold-deep)}
+.tier .for{margin-top:14px;font-size:.92rem;color:var(--ink)}
+.amt-pair{display:flex;gap:28px;margin-bottom:16px}
+.amt-pair div{font-family:var(--display);font-size:clamp(2.1rem,3.4vw,2.9rem);line-height:1}
+.amt-pair small{display:block;margin-top:6px;font:400 .9rem/1.2 var(--body);color:var(--ink-soft)}
+
+/* Collection */
+.coll{padding:clamp(64px,8vw,120px) 0;background:var(--veil)}
+.coll-head{display:grid;grid-template-columns:1fr 1fr;gap:32px 64px;align-items:end;margin-bottom:clamp(36px,4vw,56px)}
+.coll-head p{color:var(--ink-soft);max-width:44ch}
+.lines{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.lines figure{margin:0}
+.lines img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:var(--radius)}
+.lines figcaption{margin-top:12px;font-size:.92rem;color:var(--ink-soft)}
+.lines figcaption b{display:block;font:500 1.2rem/1.3 var(--display);color:var(--ink)}
+.steps.four{grid-template-columns:repeat(4,1fr)}
+
+/* Dynamic booking frame: height follows the BridalLive form */
+.book-frame{min-height:0;scroll-margin-top:16px}
+.book-frame iframe{height:420px;transition:height .35s cubic-bezier(.2,.8,.2,1)}
+
+@media (max-width:960px){
+  .tiers.three{grid-template-columns:1fr}
+  .tier.main{padding:26px 20px}
+  .coll-head{grid-template-columns:1fr}
+  .lines{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:42%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .lines::-webkit-scrollbar{display:none}
+  .lines figure{scroll-snap-align:start}
+  .steps.four{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .book-frame iframe{height:420px}
+  .lines{grid-auto-columns:70%}
+  .day{grid-template-columns:70px 1fr;gap:8px}
+  .slots{gap:4px 10px;font-size:.9rem}
+  .clock{justify-content:center}
+  .btn{padding:0 1rem}
+}
+@media (max-width:370px){.btn svg{display:none}.btn{padding:0 1rem}}
+/* Collection: expanding cards on hover (desktop with mouse); phones keep the swipe rail */
+.lines figcaption span{display:block}
+@media (hover:hover) and (min-width:961px){
+  .lines{--lh:clamp(460px,44vw,600px);display:flex;gap:10px;height:var(--lh)}
+  .lines figure{position:relative;flex:1 1 0;min-width:0;overflow:hidden;border-radius:var(--radius);cursor:pointer;outline-offset:3px;transition:flex .6s cubic-bezier(.22,.61,.36,1)}
+  /* Open card takes exactly the width of the full-height 2:3 photo, so nothing is cropped */
+  .lines figure:hover,.lines figure:focus-visible{flex:0 0 calc(var(--lh) * 2 / 3)}
+  /* Image always at full height; closed cards show a centered slice of it */
+  .lines img{position:absolute;top:0;left:50%;height:100%;width:auto;max-width:none;aspect-ratio:2/3;transform:translateX(-50%);border-radius:0}
+  .lines figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:72px 18px 18px;background:linear-gradient(rgba(20,20,20,0),rgba(20,20,20,.5));color:rgba(255,255,255,.92);white-space:nowrap}
+  .lines figcaption b{color:#fff;overflow:hidden;text-overflow:ellipsis}
+  .lines figcaption span{max-height:0;opacity:0;overflow:hidden;transition:opacity .4s ease,max-height .4s ease}
+  .lines figure:hover figcaption span,.lines figure:focus-visible figcaption span{max-height:2em;opacity:1;transition-delay:.15s}
+}
+@media (prefers-reduced-motion:reduce){.lines figure,.lines figcaption span{transition:none}}
+
+/* ===== Brand Guide colors on top of the main-LP layout (no layout changes) ===== */
+h1,h2,h3{color:var(--ink-alt)}
+::selection{background:var(--gold-soft);color:var(--ink)}
+.btn{font:700 1.1875rem/1 var(--body);letter-spacing:0}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:0 8px 20px -10px rgba(124,90,44,.6)}
+.btn-gold:hover{background:var(--gold-deep)}
+.btn-line{border-color:var(--gold);color:var(--gold-deep);font-weight:600;font-size:1.05rem}
+.btn-line:hover{background:var(--gold);color:#fff}
+.top{border-bottom-color:var(--line-gold)}
+.hero h1 .k1{color:var(--ink)}
+.hero h1 em{color:var(--gold-deep)}
+/* Backgrounds: only cream and white, alternating; no dark surfaces */
+.hero{background:var(--paper)}
+.book{background:var(--veil)}
+.planner{background:var(--paper);border-color:var(--line-gold)}
+.book-frame{border-color:var(--line-gold)}
+.frame-hint{background:var(--veil);border-top-color:var(--line-gold)}
+.frame-hint a{color:var(--gold-deep)}
+.price{background:var(--paper)}
+.tiers{border-top-color:var(--gold)}
+.coll{background:var(--veil)}
+.flow{background:var(--paper)}
+.steps::before{background:var(--line-gold)}
+.step .dot{background:var(--veil);color:var(--gold-deep)}
+.step.bell .dot{background:var(--gold);color:#fff}
+.faces{border-top-color:var(--line-gold)}
+.voices{background:var(--veil);color:var(--ink)}
+.voices h2{color:var(--ink-alt)}
+.score strong{color:var(--ink)}
+.score small{color:var(--ink-soft)}
+.quote{border-top-color:var(--line-gold)}
+.quote blockquote{color:var(--ink-alt)}
+.quote figcaption{color:var(--ink-soft)}
+.quote figcaption b{color:var(--ink)}
+.quote .tag{border-color:var(--line-gold);color:var(--gold-deep)}
+.voices-foot a:not(.btn){color:var(--gold-deep)}
+.curvy{background:var(--paper)}
+.sizes{border-top-color:var(--line-gold)}
+.sizes span.hot{color:var(--gold-deep)}
+.curvy blockquote{border-left-color:var(--gold)}
+.faq{background:var(--veil)}
+details{border-top-color:var(--line-gold)}
+details:last-child{border-bottom-color:var(--line-gold)}
+summary{color:var(--ink-alt)}
+summary::after{background:linear-gradient(var(--gold-deep),var(--gold-deep)) center/100% 1.5px no-repeat,linear-gradient(var(--gold-deep),var(--gold-deep)) center/1.5px 100% no-repeat}
+.close{background:var(--paper)}
+.visit a,.faq-side a,.book-tip a{color:var(--gold-deep)}
+footer{border-top:1px solid var(--line-gold)}
+.consent{border-color:var(--line-gold)}
+.consent p a{color:var(--gold-deep)}
+.over-note{background:var(--veil);color:var(--ink-alt)}
+.over-note a{color:var(--gold-deep)}
+.day .d{color:var(--ink-alt)}
+.day.today .d,.day:hover .d{color:var(--gold-deep)}
+.days,.day{border-color:var(--line-gold)}
+.verdict[data-tone="urgent"] b,.verdict[data-tone="good"] b{color:var(--ink-alt)}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.5l4.5 4.5 10.5-11"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 006.2 6.2l1.4-2.1 4.2 1.6V18a2.5 2.5 0 01-2.5 2.5A15.5 15.5 0 012.5 6 2.5 2.5 0 015 3.5z"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+  <symbol id="chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M4 5.5h16v10H9l-5 4z"/></symbol>
+  <symbol id="group" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="7.5" r="3"/><path d="M6 20a6 6 0 0112 0"/><circle cx="4.8" cy="10" r="2"/><circle cx="19.2" cy="10" r="2"/><path d="M1.5 18a3.6 3.6 0 014.2-3.4M22.5 18a3.6 3.6 0 00-4.2-3.4"/></g></symbol>
+  <symbol id="bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5v1.5M6 16.5V11a6 6 0 0112 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 004 0"/></g></symbol>
+  <symbol id="wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3.5 7.5h17v12h-17zM3.5 7.5l13-4v4"/><circle cx="16.5" cy="13.5" r="1.2"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <span class="logo">
+      <img src="https://www.prettywoman-brautmoden.de/wp-content/uploads/2025/07/PW_Wedding-Styles_transparent.png" alt="Pretty Woman Wedding Styles" width="180" height="52">
+    </span>
+    <a class="top-call" href="tel:+497041810225" aria-label="Anrufen: 07041 810225"><svg aria-hidden="true"><use href="#phone"/></svg><span>07041 810225</span></a>
+  </div>
+</header>
+<div class="over-note" role="status">Die Black Week ist vorbei. Deinen kostenlosen Beratungstermin kannst Du weiterhin <a href="/">hier buchen</a>.</div>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <a class="rating" href="#stimmen">
+        <svg class="g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 01-2.2 3.3v2.7h3.6c2.1-1.9 3.3-4.8 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0012 23z"/><path fill="#FBBC05" d="M5.8 14.2a6.6 6.6 0 010-4.3V7H2.1a11 11 0 000 10z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 002.1 7l3.7 2.9C6.7 7.3 9.1 5.4 12 5.4z"/></svg>
+        <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <span><b>4,9</b> aus 266 Google-Bewertungen</span>
+      </a>
+      <h1><span class="k1">Black Week</span><em>Wedding Edition</em></h1>
+      <p class="dates">24. bis 30. November</p>
+      <p class="lead">200&nbsp;€ Rabatt auf unsere neue Kollektion, die gerade frisch eingetroffen ist. Dazu ausgewählte Brautkleider für 799&nbsp;€ und Hochzeitsanzüge ab 150&nbsp;€, direkt zum Mitnehmen.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#termin" data-cta="hero"><svg aria-hidden="true"><use href="#cal"/></svg>Black-Week-Termin sichern</a>
+        <span class="cta-note">Die Beratung ist kostenlos.</span>
+      </div>
+      <p class="clock" id="clock" hidden><i aria-hidden="true"></i><span id="clock-text"></span></p>
+      <ul class="promises">
+        <li><svg aria-hidden="true"><use href="#check"/></svg>200&nbsp;€ auf die neue Kollektion</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Kleider für 799&nbsp;€ zum Mitnehmen</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Anzüge ab 150&nbsp;€</li>
+      </ul>
+    </div>
+    <figure class="hero-art">
+      <img class="a" src="img/hero-a-linie-spitze.webp" alt="Braut im A-Linien-Kleid mit floraler Spitze und offenem Rücken, neue Kollektion" width="764" height="1024" fetchpriority="high">
+      <img class="b" src="img/a-linie-tuell-schleife.webp" alt="Braut von hinten im Tüllkleid mit langer Schleppe und Schleife im Haar" width="510" height="765" loading="lazy">
+      <figcaption><q>Ich habe mich so wohl und gut aufgehoben gefühlt, wie noch nie in einem Modegeschäft.</q><span>Natascha B., Google-Bewertung</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="book" id="termin" aria-labelledby="termin-h">
+  <div class="wrap book-grid">
+    <div class="book-side rv">
+      <h2 id="termin-h">Sichere Dir Deinen Black-Week-Termin</h2>
+      <p>An <span id="slot-days">fünf</span> Tagen gibt es nur <b id="slot-count">20</b>&nbsp;Termine. Wähle im Kalender einen dieser Tage und beim Termintyp <b>„1.&nbsp;Anprobe Brautkleid“</b>.</p>
+      <ul class="days" id="days" aria-label="Termine in der Black Week"></ul>
+      <div class="planner" id="planner">
+        <label for="wedding">Wann heiratet Ihr?</label>
+        <select id="wedding">
+          <option value="">Monat wählen …</option>
+        </select>
+        <p class="verdict" id="verdict" aria-live="polite">Wähle Euer Hochzeitsdatum, dann zeigen wir Dir, welches Black-Week-Angebot am besten passt.</p>
+      </div>
+    </div>
+    <div class="book-main">
+      <div class="book-frame" id="kalender">
+        <iframe title="Terminbuchung Pretty Woman (BridalLive)" scrolling="no" src="https://app.bridallive.com/forms.html?formType=scheduler&amp;retailerId=157a8471&amp;lang=de&amp;pw_src=bw"></iframe>
+        <div class="frame-hint"><span>Kalender lädt nicht?</span><a href="https://app.bridallive.com/forms.html?formType=scheduler&amp;retailerId=157a8471&amp;lang=de&amp;pw_src=bw" target="_blank" rel="noopener" data-cta="fallback">Buchungskalender in neuem Fenster öffnen</a></div>
+      </div>
+      <p class="book-tip">Lieber persönlich? Ruf uns an: <a href="tel:+497041810225"><b>07041 810225</b></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="price" id="angebote" aria-labelledby="angebote-h">
+  <div class="wrap">
+    <div class="price-head rv">
+      <h2 id="angebote-h">Das gibt es nur in der Black&nbsp;Week</h2>
+      <p>Vom 24. bis 30. November. Danach gelten wieder die normalen Preise.</p>
+    </div>
+    <div class="tiers three rv">
+      <div class="tier main">
+        <h3>Neue Kollektion</h3>
+        <div class="amt">200&nbsp;€ <small>Rabatt</small></div>
+        <p>Auf jedes Modell der neuen Kollektion, die gerade frisch eingetroffen ist. Bestellt in Deiner Größe, mit 6–9 Monaten Lieferzeit.</p>
+        <p class="for">Perfekt, wenn Du 2027 heiratest.</p>
+      </div>
+      <div class="tier">
+        <h3>Ausgewählte Brautkleider</h3>
+        <div class="amt">799&nbsp;€</div>
+        <p>Einzelstücke, die Du direkt mitnimmst. Keine Lieferzeit, nur noch Änderungen, wenn nötig.</p>
+        <p class="for">Perfekt, wenn Ihr bald heiratet.</p>
+      </div>
+      <div class="tier">
+        <h3>Ausgewählte Hochzeitsanzüge</h3>
+        <div class="amt-pair"><div>150&nbsp;€<small>zweiteilig</small></div><div>250&nbsp;€<small>vierteilig</small></div></div>
+        <p>Ebenfalls zum Mitnehmen. Bring Deinen Partner einfach zu Deinem Termin mit.</p>
+        <p class="for">Kleid und Anzug an einem Tag.</p>
+      </div>
+    </div>
+    <div class="budget-note rv">
+      <svg aria-hidden="true"><use href="#wallet"/></svg>
+      <p><b>Der Rabatt gilt nur für Bestellungen vom 24. bis 30. November.</b> Die Beratung selbst ist kostenlos und unverbindlich, auch wenn Du Dich danach noch nicht entscheidest.</p>
+    </div>
+  </div>
+</section>
+
+<section class="coll" id="kollektion" aria-labelledby="kollektion-h">
+  <div class="wrap">
+    <div class="coll-head rv">
+      <h2 id="kollektion-h">Die neue Kollektion ist da</h2>
+      <p>Frisch eingetroffen, in jeder Linie. In der Black Week sparst Du auf jedes Modell schon 200&nbsp;€.</p>
+    </div>
+    <div class="lines rv">
+      <figure tabindex="0"><img src="img/a-linie-corsage.webp" alt="Trägerloses A-Linien-Brautkleid aus Spitze mit Korsage" width="510" height="765" loading="lazy"><figcaption><b>A-Linie</b><span>Schmale Taille, weich fallender Rock</span></figcaption></figure>
+      <figure tabindex="0"><img src="img/fit-flare-spitze.webp" alt="Fit-and-Flare-Brautkleid mit Spitzenkorsage und tiefem V-Ausschnitt" width="510" height="765" loading="lazy"><figcaption><b>Fit &amp; Flare</b><span>Figurnah bis zur Hüfte, dann ausgestellt</span></figcaption></figure>
+      <figure tabindex="0"><img src="img/h-linie-schlitz.webp" alt="Brautkleid in H-Linie mit Schnürträgern, Blütenkorsage und Beinschlitz" width="510" height="765" loading="lazy"><figcaption><b>H-Linie</b><span>Gerade und fließend geschnitten</span></figcaption></figure>
+      <figure tabindex="0"><img src="img/prinzessin-tuell.webp" alt="Prinzessinnen-Brautkleid mit Spitzenkorsage, weitem Tüllrock und Schleppe" width="510" height="765" loading="lazy"><figcaption><b>Prinzessin</b><span>Korsage und voluminöser Tüllrock</span></figcaption></figure>
+      <figure tabindex="0"><img src="img/curvy-satin.webp" alt="Curvy-Braut im schulterfreien Satinkleid mit weitem Rock" width="510" height="765" loading="lazy"><figcaption><b>Curvy</b><span>Bis Gr.&nbsp;66 zum Anprobieren</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="flow" id="ablauf" aria-labelledby="ablauf-h">
+  <div class="wrap">
+    <div class="flow-head rv">
+      <h2 id="ablauf-h">So läuft Dein Termin ab</h2>
+      <p>Du weißt vorher genau, was Dich erwartet, und entscheidest selbst, wann Du bereit bist.</p>
+    </div>
+    <ol class="steps four">
+      <li class="step rv"><span class="dot"><svg aria-hidden="true"><use href="#cal"/></svg></span><div><h3>Termin wählen</h3><p>Online in 2 Minuten. Such Dir einen der Black-Week-Tage aus, der für Dich und Deine Begleitung passt.</p></div></li>
+      <li class="step rv"><span class="dot"><svg aria-hidden="true"><use href="#chat"/></svg></span><div><h3>Wir melden uns</h3><p>Nach der Buchung melden wir uns per WhatsApp und besprechen kurz am Telefon, was Du Dir wünschst. So wartet schon eine Auswahl auf Dich.</p></div></li>
+      <li class="step rv"><span class="dot"><svg aria-hidden="true"><use href="#group"/></svg></span><div><h3>Separee &amp; Anprobe</h3><p>Zwei Stunden in Deinem eigenen Raum, mit bis zu 5 Begleitpersonen. Persönliche, kompetente und empathische Beratung.</p></div></li>
+      <li class="step bell rv"><span class="dot"><svg aria-hidden="true"><use href="#bell"/></svg></span><div><h3>Die Glocke</h3><p>Ist es Dein Kleid, läuten wir die Glocke. Wenn nicht, gehst Du ganz ohne Verpflichtung nach Hause.</p></div></li>
+    </ol>
+    <div class="faces rv">
+      <img src="https://www.prettywoman-brautmoden.de/wp-content/uploads/2026/01/Pretty-Woman-64501-2-scaled.jpg" alt="Martina, Inhaberin von Pretty Woman" width="72" height="72" loading="lazy">
+      <p><b>Martina und ihr Team</b> beraten Dich persönlich, seit 30 Jahren in Mühlacker und mit über 15.000 Kundinnen und Kunden.</p>
+    </div>
+  </div>
+</section>
+
+<section class="voices" id="stimmen" aria-labelledby="stimmen-h">
+  <div class="wrap">
+    <div class="voices-head rv">
+      <h2 id="stimmen-h">Lies selbst, was unsere Bräute&nbsp;sagen</h2>
+      <div class="score">
+        <strong>4,9</strong>
+        <div><span class="stars" aria-label="4,9 von 5 Sternen"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><small>266 Bewertungen auf Google</small></div>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="quote rv"><blockquote>„Obwohl ich mit einem gedanklichen Favoriten zum Anprobetermin gefahren bin, war ich sehr nervös. Dank Martina und Sarah war diese Nervosität aber schnell verflogen.“</blockquote><figcaption><b>Natascha B.</b><span class="tag">Nervös vorher</span></figcaption></figure>
+      <figure class="quote rv"><blockquote>„Schon beim Betreten des Ladens wurde ich herzlich empfangen und habe mich sofort wohlgefühlt. Die Auswahl an Brautkleidern ist einfach traumhaft – für jeden Stil.“</blockquote><figcaption><b>Jana H.</b><span class="tag">Auswahl</span></figcaption></figure>
+      <figure class="quote rv"><blockquote>„Ich habe mein Brautkleid inklusive Accessoires bei Pretty Woman gekauft und auch mein Verlobter hat dort seinen Anzug gefunden. Wir können es wirklich nur von Herzen weiterempfehlen!“</blockquote><figcaption><b>Karina</b><span class="tag">Kleid und Anzug</span></figcaption></figure>
+      <figure class="quote rv"><blockquote>„Kein ‚Aufschwätzen‘ oder unehrliches Überzeugen. Einfach eine herzliche, ehrliche Beratung, die mich zu meinem Traumkleid geführt hat.“</blockquote><figcaption><b>Patrizia A.</b><span class="tag">Ehrlich</span></figcaption></figure>
+      <figure class="quote rv"><blockquote>„Die Beratung hätte ich mir schöner nicht vorstellen können. Es wurde sich Zeit genommen und die Atmosphäre war total magisch.“</blockquote><figcaption><b>Cinzia G.</b><span class="tag">Atmosphäre</span></figcaption></figure>
+      <figure class="quote rv"><blockquote>„Ich hab meinen Termin ausgemacht und wurde gleich per WhatsApp informiert, dass mein Termin reserviert ist. Vorab gab es ein total tolles Telefonat mit der lieben Martina.“</blockquote><figcaption><b>Julia B.</b><span class="tag">Vorab-Kontakt</span></figcaption></figure>
+    </div>
+    <div class="voices-foot rv">
+      <a class="btn btn-gold" href="#termin" data-cta="reviews">Termin sichern</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=pretty+woman+wedding+styles+M%C3%BChlacker" target="_blank" rel="noopener">Alle 266 Bewertungen auf Google lesen</a>
+    </div>
+  </div>
+</section>
+
+<section class="curvy" id="curvy" aria-labelledby="curvy-h">
+  <div class="wrap">
+    <div class="rv">
+      <h2 id="curvy-h">Gr. 30 bis 66. Auch in der Black&nbsp;Week.</h2>
+      <p>Die neue Kollektion und die 799-€-Kleider gibt es in vielen Größen. Bei uns findest Du Brautkleider bis Gr.&nbsp;66 direkt zum Anziehen, mit Schnitten, die Deine Lieblingsstellen betonen und sicher sitzen.</p>
+      <div class="sizes" id="sizes" aria-label="Verfügbare Größen 30 bis 66">
+        <span>30</span><span>34</span><span>38</span><span>42</span><span>44</span><span>46</span><span>48</span><span>50</span><span>52</span><span>54</span><span>56</span><span>58</span><span>60</span><span>62</span><span>64</span><span>66</span>
+      </div>
+      <blockquote>„Zu Beginn hatte ich ein wenig Bedenken, ein passendes Curvy-Kleid zu finden. Durch die wunderbare und herzliche Beratung konnte ich schnell meinen Favoriten finden.“<cite>Anna-Lena F., Google-Bewertung</cite></blockquote>
+      <a class="btn btn-line" href="#termin" data-cta="curvy">Curvy-Beratung buchen</a>
+    </div>
+    <div class="curvy-pics rv">
+      <img src="img/curvy-satin.webp" alt="Curvy-Braut im schulterfreien Satinkleid aus der neuen Kollektion" width="510" height="765" loading="lazy">
+      <img src="img/curvy-spitze.webp" alt="Curvy-Brautkleid aus Spitze mit Korsage, Detailansicht" width="510" height="765" loading="lazy">
+      <img src="img/prinzessin-perlen.webp" alt="Brautkleid mit Perlenkorsage, Detailansicht" width="510" height="765" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="faq-side rv">
+      <h2 id="faq-h">Gut zu wissen</h2>
+      <p>Deine Frage ist nicht dabei? Ruf uns an unter <a href="tel:+497041810225">07041 810225</a>.</p>
+    </div>
+    <div class="rv">
+      <details open>
+        <summary>Auf welche Kleider gibt es 200&nbsp;€ Rabatt?</summary>
+        <div class="ans"><p>Auf alle Modelle unserer neuen Kollektion, die gerade frisch eingetroffen ist. Ganz egal, welches Kleid Du wählst: Du sparst 200&nbsp;€.</p></div>
+      </details>
+      <details>
+        <summary>Muss ich in der Black Week bestellen, um den Rabatt zu bekommen?</summary>
+        <div class="ans"><p>Ja, der Rabatt gilt nur für Bestellungen vom 24. bis 30. November. Die Beratung selbst bleibt kostenlos und unverbindlich, auch wenn Du Dich danach noch nicht entscheidest.</p></div>
+      </details>
+      <details>
+        <summary>Welche Kleider gibt es für 799&nbsp;€?</summary>
+        <div class="ans"><p>Ausgewählte Einzelstücke, die Du direkt mitnehmen kannst. Weil es Einzelstücke sind, ist die Auswahl je Größe begrenzt. Sag uns bei der Terminbuchung kurz Bescheid, dann legen wir passende Kleider schon für Dich bereit.</p></div>
+      </details>
+      <details>
+        <summary>Brauche ich einen Termin?</summary>
+        <div class="ans"><p>Ja. Die Beratung findet in Deinem eigenen Separee statt, deshalb nur mit Termin. In der Black Week gibt es nur wenige Termine, buche also lieber früh. Wenn online nichts mehr frei ist, ruf uns an unter <a href="tel:+497041810225">07041 810225</a>.</p></div>
+      </details>
+      <details>
+        <summary>Kann mein Partner einen Anzug anprobieren?</summary>
+        <div class="ans"><p>Sehr gern. Bring ihn einfach zu Deinem Termin mit. Ausgewählte Hochzeitsanzüge gibt es in der Black Week für 150&nbsp;€ (zweiteilig) und 250&nbsp;€ (vierteilig), direkt zum Mitnehmen.</p></div>
+      </details>
+      <details>
+        <summary>Wen darf ich mitbringen?</summary>
+        <div class="ans"><p>Bis zu 5 Begleitpersonen, zum Beispiel Deine Mama, Schwester oder Trauzeugin. Ihr habt Euer eigenes Separee.</p></div>
+      </details>
+      <details>
+        <summary>Wo kann ich parken?</summary>
+        <div class="ans"><p>Wir haben unsere firmeneigenen kostenlosen Parkplätze direkt vor unserem Haus. Du findest uns in der Stuttgarter Straße 37 in 75417 Mühlacker, gut erreichbar aus Pforzheim, Karlsruhe, Stuttgart und Heilbronn.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="rv">
+      <h2 id="close-h">Läutet in der Black Week Deine Glocke?</h2>
+      <p>Sichere Dir einen der wenigen Termine vom 24. bis 30. November. Zwei Stunden, Dein eigenes Separee, Deine Lieblingsmenschen und 200&nbsp;€ Rabatt auf die neue Kollektion.</p>
+      <a class="btn btn-gold" href="#termin" data-cta="close"><svg aria-hidden="true"><use href="#cal"/></svg>Black-Week-Termin sichern</a>
+    </div>
+    <div class="visit rv">
+      <h3>Pretty Woman Wedding Styles</h3>
+      Stuttgarter Straße 37<br>75417 Mühlacker<br>
+      <a href="tel:+497041810225">07041 810225</a><br>
+      Termine nur nach Vereinbarung<br>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Stuttgarter+Stra%C3%9Fe+37+75417+M%C3%BChlacker" target="_blank" rel="noopener">Route planen</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Pretty Woman Wedding Styles, Mühlacker</span>
+    <nav><a href="https://www.prettywoman-brautmoden.de/impressum/">Impressum</a><a href="https://www.prettywoman-brautmoden.de/datenschutz/">Datenschutz</a><button class="linkish" type="button" id="consent-open">Cookie-Einstellungen</button></nav>
+  </div>
+</footer>
+
+<div class="consent" id="consent" role="dialog" aria-labelledby="consent-h" aria-describedby="consent-p" hidden>
+  <h2 id="consent-h">Ein Keks für Dein Brautkleid-Glück? 🍪</h2>
+  <p id="consent-p">Mit ein paar Cookies sehen wir, wie Du zu uns gefunden hast und ob Dein Termin geklappt hat. So können wir unsere Seite für Dich und alle zukünftigen Bräute noch schöner machen. Dafür nutzen wir Google und Meta. Ohne Cookies messen wir Seitenaufrufe und Terminbuchungen über unseren Server (Meta) und mit Microsoft Clarity, wie unsere Seite genutzt wird. So sehen wir, welche Anzeigen funktionieren und wo die Seite noch hakt. Alle Details findest Du in der <a href="https://www.prettywoman-brautmoden.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+  <div class="consent-actions">
+    <button class="btn btn-line" type="button" data-consent="essential">Lieber nicht</button>
+    <button class="btn btn-gold" type="button" data-consent="all">Gerne, Kekse her!</button>
+  </div>
+</div>
+
+<div class="dock" id="dock">
+  <a class="btn btn-gold" href="#termin" data-cta="dock"><svg aria-hidden="true"><use href="#cal"/></svg>Black-Week-Termin sichern</a>
+  <small id="dock-note">24.–30. November · Beratung kostenlos</small>
+</div>
+
+<script>
+(function(){
+  var V = window.pwVariant;
+  // ---------- Black Week configuration ----------
+  // Set CONFIRM_26 to true once the appointments on Thursday 26.11. are confirmed
+  var CONFIRM_26 = false;
+  var START = new Date('2026-11-24T09:00:00+01:00');
+  var END   = new Date('2026-11-30T19:00:00+01:00');
+  var DAYS = [
+    {d:'2026-11-24', wd:'Dienstag',   slots:['9:00','11:00','15:00','17:00']},
+    {d:'2026-11-25', wd:'Mittwoch',   slots:['9:00','11:00','15:00','17:00']},
+    {d:'2026-11-26', wd:'Donnerstag', slots:['9:00','11:00','15:00','17:00'], pending:true},
+    {d:'2026-11-27', wd:'Freitag',    slots:['9:00','11:00','15:00','17:00']},
+    {d:'2026-11-28', wd:'Samstag',    slots:['9:00','11:00','13:00','15:00']},
+    {d:'2026-11-30', wd:'Montag',     slots:['9:00','11:00','15:00','17:00']}
+  ];
+  // Test hook: ?now=2026-11-27T12:00:00%2B01:00 simulates another point in time
+  var nowParam = new URLSearchParams(location.search).get('now');
+  function now(){ var n = nowParam ? new Date(nowParam) : new Date(); return isNaN(n) ? new Date() : n; }
+  var smooth = function(){ return matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'; };
+
+  // ---------- Day overview ----------
+  var list = document.getElementById('days'), slotTotal = 0, dayTotal = 0;
+  var numWords = ['null','einem','zwei','drei','vier','fünf','sechs','sieben'];
+  DAYS.forEach(function(x){
+    if (x.pending && !CONFIRM_26) return;
+    dayTotal++; slotTotal += x.slots.length;
+    var p = x.d.split('-'), dayEnd = new Date(x.d + 'T19:00:00+01:00'), dayStart = new Date(x.d + 'T00:00:00+01:00');
+    var li = document.createElement('li');
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'day';
+    var t = now();
+    if (t > dayEnd) b.classList.add('past'); else if (t >= dayStart) b.classList.add('today');
+    b.innerHTML = '<span class="d">' + (+p[2]) + '.&nbsp;Nov.<small>' + x.wd + '</small></span><span class="slots">' + x.slots.map(function(s){ return '<span>' + s + '</span>'; }).join('') + '</span>';
+    b.setAttribute('aria-label', x.wd + ', ' + (+p[2]) + '. November: Termine um ' + x.slots.join(', ') + ' Uhr. Zum Kalender springen.');
+    b.addEventListener('click', function(){
+      if (b.classList.contains('past')) return;
+      document.getElementById('kalender').scrollIntoView({behavior: smooth(), block:'start'});
+      dataLayer.push({event:'lp_day_click', day:x.d, lp_variant:V});
+    });
+    li.appendChild(b); list.appendChild(li);
+  });
+  document.getElementById('slot-count').textContent = slotTotal;
+  document.getElementById('slot-days').textContent = numWords[dayTotal] || dayTotal;
+
+  // ---------- Countdown ----------
+  var clock = document.getElementById('clock'), clockText = document.getElementById('clock-text'), dockNote = document.getElementById('dock-note');
+  function span(ms){
+    var m = Math.max(0, Math.floor(ms/60000)), d = Math.floor(m/1440), h = Math.floor((m%1440)/60), mi = m%60;
+    if (d >= 2) return d + ' Tagen';
+    if (d === 1) return '1 Tag und ' + h + ' Std.';
+    if (h >= 1) return h + ' Std. und ' + mi + ' Min.';
+    return mi + ' Min.';
+  }
+  function tick(){
+    var t = now();
+    if (t < START) { clock.hidden = false; clockText.innerHTML = 'Startet in <b>' + span(START - t) + '</b>, Termine schon jetzt buchbar'; }
+    else if (t < END) { clock.hidden = false; clockText.innerHTML = 'Läuft noch <b>' + span(END - t) + '</b>'; dockNote.textContent = 'Nur noch ' + span(END - t) + ' · Beratung kostenlos'; }
+    else { clock.hidden = true; document.documentElement.classList.add('is-over'); }
+  }
+  tick(); setInterval(tick, 30000);
+
+  // ---------- Reveal on scroll ----------
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.12}) : null;
+  var rvs = document.querySelectorAll('.rv,.flow');
+  rvs.forEach(function(el){ io ? io.observe(el) : el.classList.add('in'); });
+  function sweep(){ rvs.forEach(function(el){ if(el.getBoundingClientRect().top < innerHeight*0.95) el.classList.add('in'); }); }
+  addEventListener('scroll', function(){ requestAnimationFrame(sweep); }, {passive:true}); sweep();
+
+  // ---------- Mobile dock ----------
+  var dock = document.getElementById('dock'), hero = document.querySelector('.hero'), frame = document.querySelector('.book-frame');
+  var heroOut = false, bookIn = false;
+  function upd(){ dock.classList.toggle('show', heroOut && !bookIn); }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ heroOut = !es[0].isIntersecting; upd(); },{threshold:0}).observe(hero.querySelector('.cta-row'));
+    new IntersectionObserver(function(es){ bookIn = es[0].isIntersecting; upd(); },{threshold:0}).observe(frame);
+  }
+
+  // ---------- Consent banner (same as main LP) ----------
+  var cb = document.getElementById('consent'), stored = null;
+  try { stored = localStorage.getItem('pw_consent'); } catch(e) {}
+  if (!stored) cb.hidden = false;
+  cb.addEventListener('click', function(e){
+    var b = e.target.closest('[data-consent]'); if(!b) return;
+    var v = b.getAttribute('data-consent');
+    try { localStorage.setItem('pw_consent', v); } catch(err) {}
+    if (v === 'all') {
+      gtag('consent', 'update', {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'});
+      window.pwLoadMeta(); window.pwLoadGTM(); window.pwLoadClarity(true);
+    } else {
+      gtag('consent', 'update', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied'});
+    }
+    dataLayer.push({event:'consent_choice', consent:v, lp_variant:V});
+    cb.hidden = true;
+  });
+  document.getElementById('consent-open').addEventListener('click', function(){ cb.hidden = false; });
+
+  // ---------- Pass fbclid + UTMs to BridalLive ----------
+  (function(){
+    var f = document.querySelector('.book-frame iframe'); if(!f) return;
+    var q = new URLSearchParams(location.search), add = [];
+    var fbclid = q.get('fbclid');
+    if(!fbclid){ var m = document.cookie.match(/(?:^|; )_fbc=fb\.\d+\.\d+\.([^;]+)/); if(m) fbclid = decodeURIComponent(m[1]); }
+    function safe(v){ return encodeURIComponent(String(v).replace(/[^A-Za-z0-9._~-]+/g,'_').slice(0,120)); }
+    if(fbclid) add.push('fbclid=' + safe(fbclid));
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){ if(q.get(k)) add.push(k + '=' + safe(q.get(k))); });
+    if(add.length) f.src = f.getAttribute('src') + '&' + add.join('&');
+  })();
+
+  // ---------- BridalLive iframe: dynamic height + booking event ----------
+  var blFrame = document.querySelector('.book-frame iframe'), blSized = false, blH = 0, blMin = 300;
+  function blApply(){ blFrame.style.height = Math.max(blMin, blH + 32) + 'px'; }
+  setTimeout(function(){ if(!blSized) blFrame.style.height = '1040px'; }, 8000);
+  addEventListener('blur', function(){ setTimeout(function(){
+    if(document.activeElement === blFrame && blMin < 620){ blMin = 620; if(blSized) blApply(); }
+  }, 0); });
+  addEventListener('message', function(e){
+    if(!/(^|\.)bridallive\.com$/.test((e.origin||'').replace(/^https?:\/\//,''))) return;
+    var t = e.data && typeof e.data === 'object' ? e.data.type : null; if(!t) return;
+    if(t === 'bridallive.height_change'){ var h = parseInt(e.data.value, 10); if(h > 0){ blSized = true; blH = h; blApply(); } return; }
+    if(t === 'bridallive.scroll-to-top'){ if(frame.getBoundingClientRect().top < 0) frame.scrollIntoView({behavior: smooth(), block:'start'}); return; }
+    if(t === 'bridallive.event_scheduled' && !window.pwBooked){ window.pwBooked = true; window.pwMeta('TerminGebucht');
+      dataLayer.push({event:'lp_booking', lp_variant:V});
+      if(window.clarity){ clarity('event','termin_gebucht'); clarity('upgrade','termin_gebucht'); } }
+    try { var log = JSON.parse(localStorage.getItem('pw_bl_log')||'[]'); log.push([new Date().toISOString(), t]); localStorage.setItem('pw_bl_log', JSON.stringify(log.slice(-20))); } catch(err) {}
+  });
+
+  // ---------- Tracking events for GTM ----------
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-cta]'); if(!a) return;
+    dataLayer.push({event:'lp_cta_click', cta:a.getAttribute('data-cta'), lp_variant:V});
+  });
+  var calSeen = false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      if(es[0].isIntersecting && !calSeen){ calSeen = true; dataLayer.push({event:'lp_calendar_view', lp_variant:V}); window.pwMeta('ViewContent',{content_name:'Kalender Black Week'}); }
+    },{threshold:.3}).observe(frame);
+  }
+
+  // ---------- Curvy sizes (as main LP) ----------
+  var sizes = document.querySelectorAll('#sizes span'), lit = false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      if(es[0].isIntersecting && !lit){ lit = true;
+        sizes.forEach(function(s,i){ if(+s.textContent >= 44) setTimeout(function(){ s.classList.add('hot'); }, 120 + (i-4)*70); });
+      }
+    },{threshold:.5}).observe(document.getElementById('sizes'));
+  } else { sizes.forEach(function(s){ if(+s.textContent>=44) s.classList.add('hot'); }); }
+
+  // ---------- Wedding planner: which Black Week offer fits ----------
+  var sel = document.getElementById('wedding'), verdict = document.getElementById('verdict');
+  var months = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+  var base = now(); base.setDate(1); base.setHours(0,0,0,0);
+  for(var i=1;i<=24;i++){
+    var d = new Date(base.getFullYear(), base.getMonth()+i, 1);
+    var o = document.createElement('option'); o.value = d.getFullYear()+'-'+d.getMonth(); o.textContent = months[d.getMonth()]+' '+d.getFullYear(); sel.appendChild(o);
+  }
+  var o2 = document.createElement('option'); o2.value='later'; o2.textContent='Später'; sel.appendChild(o2);
+  function render(){
+    var v = sel.value; if(!v) return;
+    var m = v==='later' ? 26 : (function(){ var p=v.split('-'); return (+p[0]-base.getFullYear())*12 + (+p[1]-base.getMonth()); })();
+    if(m <= 5){ verdict.dataset.tone='urgent'; verdict.innerHTML = '<b>Unsere 799-€-Kleider passen perfekt.</b> Du nimmst Dein Kleid direkt mit, ohne Lieferzeit. Den Anzug für Deinen Partner gibt es ab 150&nbsp;€ gleich dazu.'; }
+    else if(m <= 9){ verdict.dataset.tone='urgent'; verdict.innerHTML = '<b>Beides ist möglich.</b> Aus der neuen Kollektion mit 200&nbsp;€ Rabatt wird es mit 6–9 Monaten Lieferzeit knapp, aber machbar. Sicher bist Du mit einem 799-€-Kleid zum Mitnehmen.'; }
+    else { verdict.dataset.tone='good'; verdict.innerHTML = '<b>Ideal für die neue Kollektion.</b> Mit 6–9 Monaten Lieferzeit bist Du entspannt im Plan, und in der Black Week sparst Du 200&nbsp;€.'; }
+  }
+  sel.addEventListener('change', function(){ render(); if(sel.value) dataLayer.push({event:'lp_wedding_month', wedding_month:sel.value, lp_variant:V}); });
+})();
+</script>
+</body>
+</html>
