@@ -7,7 +7,7 @@ Aktions-LP für 24.–30.11.2026, Ziel-URL `https://prettywoman-termine.velonify
 
 - `index.html`: die LP, eine Datei, CSS und JS inline
 - `fonts/`: Playfair Display und Inter (OFL)
-- `img/`: neue Kollektion aus Drive „Brautkleid Bilder“ (WebP). Galerie in `img/galerie/01–16.webp` (764–900 px breit, nur vom Kunden freigegebene Bilder: Curvy-Ordner 36xxx, IMG_9576, Lasabina Kiara-21/Sindy-3, Novabella 31110, Prinzessin); die alten 510-px-Herstellerbilder nutzt nur noch das Archiv
+- `img/`: neue Kollektion aus Drive „Brautkleid Bilder“ (WebP). Galerie in `img/galerie/01–16.webp` (764–900 px breit, nur vom Kunden freigegebene Bilder: IMG_6412–6414, Curvy-Ordner 36xxx, IMG_9576, Lasabina Kiara-21/Sindy-3, Novabella 31110, Prinzessin); die alten 510-px-Herstellerbilder nutzt nur noch das Archiv
 - `PROMPT_Black-Week-LP.md`: ursprüngliches Briefing
 - `_archiv/variante-a-brandguide.html`: verworfene Variante mit eigenem Layout. Der Ordner beginnt mit `_`, GitHub Pages (Jekyll) veröffentlicht ihn nicht.
 
@@ -50,5 +50,5 @@ Wie Termin-LP (Consent Mode v2, GTM `GTM-PLBF7LSN` nach Zustimmung, Meta-Pixel n
 
 ## Galerie: noch einzubauen
 
-Vom Kunden freigegeben, aber über die Drive-Anbindung nicht ladbar (über 10 MB): `6028`, `6070`, `6087`, `6089`, `6090`, `6091` (je mit `_v1`, `_back`, `_back1`) und `IMG_6412–6414`. Lokal herunterladen, auf 900 px Breite als WebP exportieren und in `img/galerie/` ergänzen.
+Vom Kunden freigegeben, aber über die Drive-Anbindung nicht ladbar (über 10 MB): `6028`, `6070`, `6087`, `6089`, `6090`, `6091` (je mit `_v1`, `_back`, `_back1`). Lokal herunterladen, mit `cwebp -q 80 -resize 900 0` als WebP exportieren und in `img/galerie/` ergänzen.
 Nicht verwendet: `IMG_9590–9592` (Handy-Screenshots mit eingeblendeten Pfeilen), `IMG_9583/9584` (nur 600 px breit).
