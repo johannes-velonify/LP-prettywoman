@@ -7,13 +7,13 @@ Aktions-LP für 24.–30.11.2026, Ziel-URL `https://prettywoman-termine.velonify
 
 - `index.html`: die LP, eine Datei, CSS und JS inline
 - `fonts/`: Playfair Display und Inter (OFL)
-- `img/`: neue Kollektion aus Drive „Brautkleid Bilder“ (WebP). Galerie in `img/galerie/01–16.webp` (764–900 px breit, nur vom Kunden freigegebene Bilder: IMG_6412–6414, Curvy-Ordner 36xxx, IMG_9576, Lasabina Kiara-21/Sindy-3, Novabella 31110, Prinzessin); die alten 510-px-Herstellerbilder nutzt nur noch das Archiv
+- `img/`: neue Kollektion aus Drive „Brautkleid Bilder“ (WebP). Galerie in `img/galerie/01–24.webp` (764–900 px breit, nur vom Kunden freigegebene Bilder: 60xx-Schloss-Serie, IMG_6412–6414, Curvy-Ordner 36xxx, IMG_9576, Lasabina Kiara-21/Sindy-3, Novabella 31110, Prinzessin); die alten 510-px-Herstellerbilder nutzt nur noch das Archiv
 - `PROMPT_Black-Week-LP.md`: ursprüngliches Briefing
 - `_archiv/variante-a-brandguide.html`: verworfene Variante mit eigenem Layout. Der Ordner beginnt mit `_`, GitHub Pages (Jekyll) veröffentlicht ihn nicht.
 
 ## Aufbau
 
-Hero → Termin (Tagesübersicht, BridalLive, „Wann heiratet Ihr?“) → Angebote (3 Preisspalten) → Galerie der neuen Kollektion (16 Bilder, Lightbox mit Pfeiltasten/Wischen, mobil erst 6 + „Alle 16 Bilder ansehen“) → Ablauf → Bewertungen → Curvy → FAQ → Abschluss.
+Hero → Termin (Tagesübersicht, BridalLive, „Wann heiratet Ihr?“) → Angebote (3 Preisspalten) → Galerie der neuen Kollektion (24 Bilder, Lightbox mit Pfeiltasten/Wischen, mobil erst 6 + „Alle 24 Bilder ansehen“) → Ablauf → Bewertungen → Curvy → FAQ → Abschluss.
 
 ## Inhalt (vom Kunden bestätigt)
 
@@ -48,7 +48,7 @@ Wie Termin-LP (Consent Mode v2, GTM `GTM-PLBF7LSN` nach Zustimmung, Meta-Pixel n
 4. Anzahl Google-Bewertungen (266) kurz vor Livegang aktualisieren
 5. Live testen: CAPI-Relay (nimmt nur `https://prettywoman-termine.velonify.de` an), Pixel, Buchung
 
-## Galerie: noch einzubauen
+## Galerie: Quellen
 
-Vom Kunden freigegeben, aber über die Drive-Anbindung nicht ladbar (über 10 MB): `6028`, `6070`, `6087`, `6089`, `6090`, `6091` (je mit `_v1`, `_back`, `_back1`). Lokal herunterladen, mit `cwebp -q 80 -resize 900 0` als WebP exportieren und in `img/galerie/` ergänzen.
+Alle Galeriebilder sind vom Kunden freigegeben (06.11.). Die Originale der 60xx- und IMG_641x-Bilder sind 5464 × 8192 px und über 10 MB, sie wurden lokal heruntergeladen und mit `cwebp -q 80 -resize 900 0` exportiert.
 Nicht verwendet: `IMG_9590–9592` (Handy-Screenshots mit eingeblendeten Pfeilen), `IMG_9583/9584` (nur 600 px breit).
