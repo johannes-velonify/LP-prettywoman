@@ -7,24 +7,24 @@ Aktions-LP für 24.–30.11.2026, Ziel-URL `https://prettywoman-termine.velonify
 
 - `index.html`: die LP, eine Datei, CSS und JS inline
 - `fonts/`: Playfair Display und Inter (OFL)
-- `img/`: neue Kollektion aus Drive „Brautkleid Bilder“ (WebP)
+- `img/`: neue Kollektion aus Drive „Brautkleid Bilder“ (WebP). Galerie in `img/galerie/01–12.webp` (764–900 px breit); die alten 510-px-Herstellerbilder nutzt nur noch das Archiv
 - `PROMPT_Black-Week-LP.md`: ursprüngliches Briefing
 - `_archiv/variante-a-brandguide.html`: verworfene Variante mit eigenem Layout. Der Ordner beginnt mit `_`, GitHub Pages (Jekyll) veröffentlicht ihn nicht.
 
 ## Aufbau
 
-Hero → Termin (Tagesübersicht, BridalLive, „Wann heiratet Ihr?“) → Angebote (3 Preisspalten) → neue Kollektion (5 Linien, Desktop: Karten klappen beim Hovern in voller Bildbreite auf, mobil: Wisch-Slider) → Ablauf → Bewertungen → Curvy → FAQ → Abschluss.
+Hero → Termin (Tagesübersicht, BridalLive, „Wann heiratet Ihr?“) → Angebote (3 Preisspalten) → Galerie der neuen Kollektion (12 Bilder, Lightbox mit Pfeiltasten/Wischen, mobil erst 6 + „Alle 12 Bilder ansehen“) → Ablauf → Bewertungen → Curvy → FAQ → Abschluss.
 
 ## Inhalt (vom Kunden bestätigt)
 
 - 200 € Rabatt auf **alle** Modelle der neuen Kollektion, nur bei Bestellung vom 24. bis 30.11.
 - Ausgewählte Brautkleider 799 € zum Mitnehmen
-- Ausgewählte Hochzeitsanzüge 150 € (2-tlg.) / 250 € (4-tlg.)
-- Termine: Di 24., Mi 25., Fr 27., Mo 30.11. je 9/11/15/17 Uhr · Sa 28.11. 9/11/13/15 Uhr · Do 26.11. noch offen · So zu
+- Komplette Hochzeitsanzüge für maximal 250 € (zweiteilig max. 150 €). Nie „ab“-Preise schreiben. Der Partner braucht einen **eigenen Termin** (Termintyp „Anprobe Anzug Bräutigam“), keine gemeinsamen Termine
+- Termine: Di 24., Mi 25., Do 26., Fr 27., Mo 30.11. je 9/11/15/17 Uhr · Sa 28.11. 9/11/13/15 Uhr · So zu (24 Termine)
 
 ## Schalter im Script
 
-- `CONFIRM_26 = false` → auf `true`, sobald die Termine am Do. 26.11. bestätigt sind. Tage und Terminanzahl rechnen sich selbst.
+- `CONFIRM_26 = true` (26.11. am 06.11. bestätigt). Tage und Terminanzahl rechnen sich selbst.
 - `START` / `END`: Countdown („Startet in …“, „Läuft noch …“). Nach `END` erscheint oben ein Hinweis mit Link zur Termin-LP `/`.
 - Test: `?now=2026-11-27T12:00:00%2B01:00` simuliert ein Datum.
 
@@ -37,14 +37,13 @@ Die Höhe folgt der BridalLive-Nachricht `bridallive.height_change` (Inhaltshöh
 Wie Termin-LP (Consent Mode v2, GTM `GTM-PLBF7LSN` nach Zustimmung, Meta-Pixel nach Zustimmung, CAPI-Relay und Clarity cookielos ohne Zustimmung, gleicher `pw_consent`-Schlüssel). Zusätzlich:
 - `lp_variant: 'black_week'` im dataLayer, an allen Events, als Meta-`custom_data` und als Clarity-Tag
 - BridalLive-iframe mit `pw_src=bw`
-- neue Events: `lp_day_click` (day), `lp_booking`
+- neue Events: `lp_day_click` (day), `lp_booking`, `lp_gallery_open` (image)
 - `data-cta` wie Termin-LP: `hero`, `reviews`, `curvy`, `close`, `dock`, `fallback`
 
 ## Offen vor Livegang
 
 1. Mo. 30.11. in BridalLive für Online-Buchung freischalten (Stand 05.11. gesperrt; Termintyp-Text sagt „Montag nur via Mail“) und im Kalender prüfen
-2. 26.11. bestätigen → `CONFIRM_26`
-3. GTM: Data-Layer-Variable `lp_variant` + Trigger für `lp_day_click` / `lp_booking` anlegen
-4. Keine Streichpreise/Prozente ohne niedrigsten 30-Tage-Preis (§ 11 PAngV)
-5. Anzahl Google-Bewertungen (266) kurz vor Livegang aktualisieren
-6. Live testen: CAPI-Relay (nimmt nur `https://prettywoman-termine.velonify.de` an), Pixel, Buchung
+2. GTM: Data-Layer-Variable `lp_variant` + Trigger für `lp_day_click` / `lp_booking` anlegen
+3. Keine Streichpreise/Prozente ohne niedrigsten 30-Tage-Preis (§ 11 PAngV)
+4. Anzahl Google-Bewertungen (266) kurz vor Livegang aktualisieren
+5. Live testen: CAPI-Relay (nimmt nur `https://prettywoman-termine.velonify.de` an), Pixel, Buchung
